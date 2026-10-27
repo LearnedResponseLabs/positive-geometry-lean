@@ -1,0 +1,817 @@
+{
+  "source_commit": "a18aa43f17ecc9bdb5746fba34664f93d3273a43",
+  "source_tag": "lean-conj43-supplement-2026-10-26",
+  "last_statement_commit": "a18aa43f17ecc9bdb5746fba34664f93d3273a43",
+  "export_scope": "From the Lake package Conj43: all Lean modules (including the frozen challenge statements), the Comparator configurations, driver, axiom-report entry point, build configuration, license, and the retained coloop definition-check report. From the companion package LeanTP: the decorated-permutation adapter with its import closure, fourteen modules (definitions, proofs, frozen challenge and its scaffold), four of them its vendored port of LeanLGV (Apache-2.0, Per Alexandersson) with that port's license and port note; and the loop deletion, eight modules (definitions, proofs, the root module TPLoops, frozen challenge and its scaffold) with its Comparator configuration comparator_loops.json. All are exactly as in the tagged source commit, which is also the last commit that changed a Lean statement or proof, except the two files listed under export_edits: the build configuration gains four library entries for the LeanTP modules, and comparator_adapter.json is the adapter's entry of the LeanTP Comparator configuration. Python checkers that depend on files outside the archive and development notes are omitted.",
+  "export_edits": [
+    {
+      "path": "lakefile.toml",
+      "sha256_at_source_commit": "a99d15d31d44a5065a372af21faef6be807d113e3dc1f2b76609ca2485d8cb7a",
+      "sha256_exported": "1ebca6abcad23de532e22a7d9c0cc0ce3928ae1f05e0de87ebda8eedb8eee801",
+      "change": "appends the library entries LGV, TP, TPAdapter and TPLoops, so that Lake builds the modules taken from LeanTP in this tree"
+    },
+    {
+      "path": "comparator_adapter.json",
+      "derived_from": "comparator_necklace.json of LeanTP at the source commit",
+      "sha256_of_source_file": "ece7219e1893a65842a0a8cce3ea23a8de1ae963783c7aed0402d7cf1f995731",
+      "change": "its crossing_adapter entry, as a configuration of its own"
+    }
+  ],
+  "files": [
+    {
+      "path": "Challenge/Conj43.lean",
+      "sha256": "c0c5fcaed7ba0980e11664860252a7dbb4a6e06d79c4b40a50f35638b8af005b",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/CrossingAdapter.lean",
+      "sha256": "07f6b98528bd01a2e20ec37f082b8367a1fcca4ad901d8402846330e3b4503a2",
+      "from": "LeanTP"
+    },
+    {
+      "path": "Challenge/CrossingAdapterScaffold.lean",
+      "sha256": "07f6b98528bd01a2e20ec37f082b8367a1fcca4ad901d8402846330e3b4503a2",
+      "from": "LeanTP"
+    },
+    {
+      "path": "Challenge/ExtensionsCount.lean",
+      "sha256": "98e24485040c79c1f19435d58515f6ec5ab2ca525d99e589b708df60e94a9adf",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsCountScaffold.lean",
+      "sha256": "98e24485040c79c1f19435d58515f6ec5ab2ca525d99e589b708df60e94a9adf",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsLipschitz.lean",
+      "sha256": "5d3ebe9d9430c154485771913ab58284414b90e2a38fc6b9791ea6a00b2f02d0",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsLipschitzScaffold.lean",
+      "sha256": "5d3ebe9d9430c154485771913ab58284414b90e2a38fc6b9791ea6a00b2f02d0",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsSandwich.lean",
+      "sha256": "e46142228c2e4d0114dcda0980ef5893d2eba03f927165f01c378d0a8ac21db6",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsSandwichScaffold.lean",
+      "sha256": "e46142228c2e4d0114dcda0980ef5893d2eba03f927165f01c378d0a8ac21db6",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsSharp.lean",
+      "sha256": "822aed0663fb9f1444aee749d0235c20f9baa305a743c278df2bdf95947c3f3a",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsSharpScaffold.lean",
+      "sha256": "822aed0663fb9f1444aee749d0235c20f9baa305a743c278df2bdf95947c3f3a",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsShift.lean",
+      "sha256": "e68c59f1604d20b2d6be69e98b0cf195da26ca915c6df5e118cd9043cfdfb617",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ExtensionsShiftScaffold.lean",
+      "sha256": "e68c59f1604d20b2d6be69e98b0cf195da26ca915c6df5e118cd9043cfdfb617",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/GradientPreimage.lean",
+      "sha256": "3478feb5e192dd91b6d81e4a760c2700231533ba4ba2bd22599d9af5d0f4cb2b",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/GradientPreimageScaffold.lean",
+      "sha256": "3478feb5e192dd91b6d81e4a760c2700231533ba4ba2bd22599d9af5d0f4cb2b",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/Interface.lean",
+      "sha256": "ff5d2a243b72b11aaeeb45bc80fc189f75fae83fc6092f4efcf03560dd27080b",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceChords.lean",
+      "sha256": "84eb1f045218de55c80bb1ba2ddfd059575fd2cb92b6aabb93485b49b1c7602c",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceChordsScaffold.lean",
+      "sha256": "84eb1f045218de55c80bb1ba2ddfd059575fd2cb92b6aabb93485b49b1c7602c",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceCrossing.lean",
+      "sha256": "ec6a20d20e16851cbe83a05d71488f5dee9b2a26ff306c52c1cfd554275eb318",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceCrossingScaffold.lean",
+      "sha256": "ec6a20d20e16851cbe83a05d71488f5dee9b2a26ff306c52c1cfd554275eb318",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceExponent.lean",
+      "sha256": "d034adc5ec3af4aaf03fc59480466a05fa92f5144cd383b0d20545c97b1bd535",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceExponentScaffold.lean",
+      "sha256": "d034adc5ec3af4aaf03fc59480466a05fa92f5144cd383b0d20545c97b1bd535",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceRefined.lean",
+      "sha256": "516e0e00b041ab0aa06a10016bdee5d38310b3256ac441959631413b75afa7ad",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceRefinedScaffold.lean",
+      "sha256": "516e0e00b041ab0aa06a10016bdee5d38310b3256ac441959631413b75afa7ad",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/InterfaceScaffold.lean",
+      "sha256": "ff5d2a243b72b11aaeeb45bc80fc189f75fae83fc6092f4efcf03560dd27080b",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/Loops.lean",
+      "sha256": "4ee025aa8054396618ad591dfc6b3cede1782560b0105b541b00e03e267827a0",
+      "from": "LeanTP"
+    },
+    {
+      "path": "Challenge/LoopsScaffold.lean",
+      "sha256": "24ca173e58410399e2b1bb1f22dbca070921ccdc847d1a2f42ac3759eb11ef3b",
+      "from": "LeanTP"
+    },
+    {
+      "path": "Challenge/NecklaceEmbedding.lean",
+      "sha256": "b36f87c01d8cfea2bb3f83b334c72dd60f0df624e6a0d632cfec84741212e901",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/NecklaceEmbeddingScaffold.lean",
+      "sha256": "b36f87c01d8cfea2bb3f83b334c72dd60f0df624e6a0d632cfec84741212e901",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/PartitionCount.lean",
+      "sha256": "e30fc31f1a5b897a06184c3a09330b5c9639d3bd0766ab132b6584e7e0bc76f8",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/PartitionCountScaffold.lean",
+      "sha256": "e30fc31f1a5b897a06184c3a09330b5c9639d3bd0766ab132b6584e7e0bc76f8",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/Reduction.lean",
+      "sha256": "308845588a22b0a7c2ad790eea777cd9d26aa57c536fac351c489896572a9336",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/ReductionSquare.lean",
+      "sha256": "821e0bb6f26865b8f71eebd4e3972d5779e8025b21404c7f22b137c78fa08069",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/WindowLemmas.lean",
+      "sha256": "26fc94a5853fdcedce42a91defe77f1d7b12d7c6a849606dcf45c84e04b9123e",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge/WindowLemmasScaffold.lean",
+      "sha256": "26fc94a5853fdcedce42a91defe77f1d7b12d7c6a849606dcf45c84e04b9123e",
+      "from": "Conj43"
+    },
+    {
+      "path": "Challenge.lean",
+      "sha256": "d9b878f1da026e2bb5d0338cfce4fc3d1249d6527636e18529e11adfad3721bd",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Clockwise4Forms.lean",
+      "sha256": "56868d334713e350786ae66dc73605715827ca255514fd81e0c1488fcba970b9",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Coloop.lean",
+      "sha256": "47b75bbcf729b9a2cb459343564c95008c31add29d0c398c24a95a9feddd826c",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/CotCycle.lean",
+      "sha256": "fb0e46f154b107a28ae9e969b1e180680bbd7fa65f807878d8ab0f4cef52ebf4",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Cover.lean",
+      "sha256": "07af1538ae1ec86f9cebc09fc70d9a1d56b926444cc3ecea1c813dcfa9cb53d9",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/CoverInsert.lean",
+      "sha256": "a2092022aee7d365c3ab52c0e64ef419e29ae894851aacbd7e5af564b6decfa7",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/CoverSurgery.lean",
+      "sha256": "dcf3ae749c06303fd8e56f6a75145cb5622dc1790e896745fcd958454bdead65",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/CyclicArc.lean",
+      "sha256": "74efe98b7e2d13e1d8e3dbbfdc9d52ef1a193396e47e7dbfad65c99809386cae",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Defs.lean",
+      "sha256": "574c1668cbb4df9ad0853fabf0a944384227503d81fc2cf09d88bdf19f459115",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Delta.lean",
+      "sha256": "4fad914dda31051a35b7e863bf4a50f478b382e4b0c13fbeb48f55d0437d3568",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Eval.lean",
+      "sha256": "97027d822344ccdba9c3fafaf57e5e0968da5287f5c76320d1186e795207fe81",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsCount.lean",
+      "sha256": "6db77bbbf647373458a8ad4d996caf7f299a6379e25ae783a6da78a0ec28cf0e",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsDefs.lean",
+      "sha256": "d0d8d5148c9a578e660e97e2103906e23d3b512d9edceb6408a618e63a278cde",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsDiagonal.lean",
+      "sha256": "24c167c0b6d1aa56d9f8d543dff3e79c545ae4e12c658e2620f33d8c81770c24",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsLipschitz.lean",
+      "sha256": "fbccf0d0e2a3596d2382e2e19a00b25ab50c9154a94c2f26caf771cf2c69c221",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsLipschitzCalculus.lean",
+      "sha256": "c3ec7a9581fbbcf2a7380ced82e472e2a586a2d077f234892711d0b9d081d175",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsLipschitzPositive.lean",
+      "sha256": "540d4f5a58774491ecea2bca765a7641d3a1bd1ee32be9795b990dff93419262",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsLipschitzQuotient.lean",
+      "sha256": "54414cd41ed181f163885c65116cd49d2eebd56e89fff21ac54c76947fae4c49",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsLipschitzSpectrum.lean",
+      "sha256": "cc3be84ab6fc672114fd36514f3253961740d4e8ea9e3c3ed46f9547ef9ca77e",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsSandwich.lean",
+      "sha256": "c7e0788cbddbfbb89aaffac16734a4f467514aa3c241dd563313cfa72a399f8c",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsSharp.lean",
+      "sha256": "fd87b16f3a0f342ba80d1f603b4e796cfecd066ce9708adc3d6f3d7b79d33472",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsSharpSupport.lean",
+      "sha256": "baadf3ee21ed6bca1f3b564488b506ebfd17720b378f391df27836bdd0c3682b",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsShift.lean",
+      "sha256": "775272bac6ac6bb8d0f93390d218684bc6ec6124002402ecdd12ba72d34ceb5f",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsShiftedCot.lean",
+      "sha256": "20b8faf4fed0f2bde673d844151713900fb7b914ad2358a5c47ccb2eb0e2c44e",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ExtensionsTanPath.lean",
+      "sha256": "1cbbdc2aada829c2fee215f1dda94aba0c50b8447ddedda258bfecbe6af192c5",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/FullColumns.lean",
+      "sha256": "582762c731d30a3791a013797d7c965a2fb43a51661aa7c6b6a7eb9202619ffa",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Hessian.lean",
+      "sha256": "58f29b92d255bd5fa5e4dbed56dafe597aab167a244ae5b9a6fa08a27ffd9631",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Hinge.lean",
+      "sha256": "40f72dead7104302a324b7ad8879585447687023b977eb835f409b3c949c5039",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Interface.lean",
+      "sha256": "2f9cb0153204519e71dcf081268298e733e8476de8eb37794881061019f7eb50",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceChordsControlFacts.lean",
+      "sha256": "fc68f84e0cca05a5388ed2222848cf26466112808674cff19cb632b92bdc9f64",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceChordsDefs.lean",
+      "sha256": "24b6a7a684353700034fef1e0985be700af9c21e7581c1545443c6cc315324ac",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceChordsProofs.lean",
+      "sha256": "c79f2b3ba80a07657caa944c6dcc14f04825e653247d6ffbeece4325d2ee1ce2",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceCrossingDefs.lean",
+      "sha256": "c42530069d515479bc09972a6ff3b5bf5f8767694fdc46a2ba93bff32d030edf",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceCrossingProofs.lean",
+      "sha256": "24d275e7cc4b63359c43528cb59a6a42b4971a7be8d4e3410fd3583e905e51db",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceDefs.lean",
+      "sha256": "28882946ebf3e4111aac7880e432a330089a0101ee3810acfc226780569f0945",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceExponentProofs.lean",
+      "sha256": "a8a0e1cf7acd77e400683682d3b01e27f5d7e1cddfaac7402291623eeb6ddd45",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceProofs.lean",
+      "sha256": "a163f8c7db7ed2c5a1e8534904bec7250a2419f477783efe5ccc1f584cb558a1",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceRefinedDefs.lean",
+      "sha256": "b79c394eadcc601be731749aa98b4d1e1f4f6e0cdce71065418747500b229286",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/InterfaceRefinedProofs.lean",
+      "sha256": "d01d63050a764967aa6a12e4973a7da5471a87674ccc20b56e8a9a0c669bebd2",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L5Defs.lean",
+      "sha256": "73726ffe6a03cea4804703e62732a6ee8a5d552e6e23679e121e53e3a3912c10",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L5Statements.lean",
+      "sha256": "51b8a770f6e1c2c58114c6979df0ecd5f643c465c100ca281523fa387fa73fa4",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L6Balance.lean",
+      "sha256": "4be75a0af55474e288fd4ee66ef9fefc4464fffec78d1a2c0081c7998d12bd0d",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L6Calculus.lean",
+      "sha256": "ac4012281d8c79e55d7831d7afa6edfa3e7a0cb1629bea8f4829506eb7291197",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L6Conditional.lean",
+      "sha256": "f3d234a8f10407c7ec1d87693f3c05182d60034d216eb3499c6ecabe47ca1711",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L6Range.lean",
+      "sha256": "fa2be0993815d185af381d52b5c100649d77269d0a02dadc623314836c055629",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L6Slice.lean",
+      "sha256": "b7e3c32da9023dc49196c2713c155d8e28a94b3ca7b4ab46b4ed76b3384d0dbc",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L6Statements.lean",
+      "sha256": "4afa3c2eab681598c02b48537abf80f407fb722e00bf3f59ae9b64b973745ca8",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L6Topology.lean",
+      "sha256": "147415476b5bfa1e6ba08f31aa2eff2c9bc816ddfb8ab979e34be996c618c2bf",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L7Conditional.lean",
+      "sha256": "13de650e8635cdbcdffc4df10c4fff22fd8c309062db0ed2f1937b90b500d9c3",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L7Log.lean",
+      "sha256": "d22c6d233cebbd4da46f2c9db2946a739e8f14f893ab185dbc9d7166dbe5f44c",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/L7Statements.lean",
+      "sha256": "3131af35928ff3ce21ef88c4cd0e80ea0b639f69c7436aad1fe1500fcae066cb",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/LipschitzDefs.lean",
+      "sha256": "a5f4e5ae6a3dbc8b24a6309ccfee68c08a283c0967ebe795bfa46e8466d1eba5",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/NecklaceEmbedding.lean",
+      "sha256": "dd4b02a9097bdacfa60b687622d1e900d62bf11622dd6bb6e6ff7139d1ec18d2",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/NecklaceEmbeddingControl.lean",
+      "sha256": "4880436a0d9a9688c4b4fda38c5df27bb1ccd7003704100c24db418cad76ffc5",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/NecklaceEmbeddingDefs.lean",
+      "sha256": "db8c58773e115b1a5166e8c3cdf0611b738091657c255db4f5c4cba74859b624",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/NecklaceEmbeddingRecovery.lean",
+      "sha256": "d3a0b76f6e501392713bcfd672cca0071fd416d42e91b94d72d6b4a6261ee85f",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/NecklaceStep.lean",
+      "sha256": "5be3fef945c4308d74b8c2edb06b3880b95a09915c38d0e309d36211369ef98c",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/PairExponentClosed.lean",
+      "sha256": "aa2c9dd9f28928dc128ad830699815990698fcc68a8d463938d81aa5672805d8",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/PairOrders.lean",
+      "sha256": "4176dd4b2c7fcbabb2a520146d66464d85bdc3ff9e9638c0d0f72053a4ea79e2",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/PartitionCountProofs.lean",
+      "sha256": "032c3bb2313165ff86d305a691811141072b02c69ff33368ea64db7874969459",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Reduction.lean",
+      "sha256": "29520547262ddf2c94ccffbe34c478451755022ecb3e5849b7d81d50e298fad9",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionAlternation.lean",
+      "sha256": "992d6e55324252394324d6d075daf7932e38f1da16c74660b9f095a8caab5bac",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionCircle.lean",
+      "sha256": "668dc3807240531a56f0004bdeb3963a57007cb7d13ba12225e2689ce86f4aec",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionComponents.lean",
+      "sha256": "f8d0a3cc894836eaaddda63f3e2e742fbffddb4a364bf57735f9769a6186955c",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionConnected.lean",
+      "sha256": "542450c10be8529ed0bd48b0c9f284976090a5e85e206cf29d85d0c72a6a5d7a",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionControls.lean",
+      "sha256": "4ec4dc1cf26a90515c90bd0ce3155761c891d98569f611eeda8d4b80164ffa80",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionCrossings.lean",
+      "sha256": "37282f6377c0ecd0de4b16c2bf2142e679367aa2556b8e12b473317ca675daff",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionDefs.lean",
+      "sha256": "8603e16b1ffa1840a3ba055441455722a5292c37bb279975f0fdf691ee44001b",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionSlice.lean",
+      "sha256": "139c7fa5aa3b92b7f638e69aafae5c402a103883176b0c90faccea20d1480477",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionSquareProof.lean",
+      "sha256": "efd235d31feb03dd7569d04b59a08d380c6e4b3c0eb0c155cf6b424ef3625299",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/ReductionSquareProofHelpers.lean",
+      "sha256": "77041b633c79c5f1fab7083b49d699514ac5ccb40149512bb509129f72065fd5",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/RowDiff.lean",
+      "sha256": "cbd1d6b84cc3df8ea13939183dc6a9f01b7f8c4a31070adfb5162942f75f9fa6",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Seed.lean",
+      "sha256": "4b3d31a4e58ec21a1f6f375d8f5177b43c810d18391eecb93369d42129a0e329",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/SeedCover.lean",
+      "sha256": "cc1e0e4cfe0edbc1e33763eae116550f80864618894aece5dab4a25ec277a61f",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/SeedProof.lean",
+      "sha256": "6a709fec5fc322f1b2aef68f62e2a4cf6806eaa73659662fdfd8e640c07f5272",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/SeedTableCore.lean",
+      "sha256": "3515af2ccd4d559e890b2f0a737488edabd77e5e5163da81c783d766f950bfe0",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/SeedTableLocal.lean",
+      "sha256": "c8dc20b254456844af9406293aef50264c10ad0064fb1f1449ae0845e4e284fb",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/SeedTableMaster.lean",
+      "sha256": "23c067069f1e451cd76275077571319743e62d02ed991a3a6537ad83c1ef34f0",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/SeedTableVerdicts.lean",
+      "sha256": "a04309a031ac2c4b899cf2ca0b654177e0eaf8c9b6ce4466d4a5acaa4f78b4ab",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Statements.lean",
+      "sha256": "0626f0c3ce904b850377e8d5e11a5dbfaf504c809aeffc68c7951431b8273d9a",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/VariationalPreimage.lean",
+      "sha256": "be75245a82e3272cd21d0cd6c047f54faae3dd0febdac0492d6ac6893c49411e",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Winding.lean",
+      "sha256": "970e02391356ffa42d95b030f1b64abac313aa26670812c5af5935c9d1bab637",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/Window.lean",
+      "sha256": "492a6bd53e6ac656eeeac3f4c58f10d43ec70ce82c0a312fe3f2603fdb89c2e8",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/WindowAscent.lean",
+      "sha256": "ed4b15041032562cf04bd60659845f03ae0b95659a2fb4ccb8976946e60653e4",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/WindowLemmasBridges.lean",
+      "sha256": "64f0767b4587311346c14cc761c61d5a5ae6ae15aa4070f68972a0b41fcd07ac",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/WindowLemmasDefs.lean",
+      "sha256": "862b8e02a2ed9856d18f796be3f8031039ac9fd3fe8c89767435add3d093e56f",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/WindowLemmasInversions.lean",
+      "sha256": "50259efe47df0b41ba4128cee86e4b3783d17358f9a13710ea8fe021ef8ff101",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/WindowLemmasProofs.lean",
+      "sha256": "949a2f653151a847461b57643425fa1be9000346b6c15817e6c180a81cdaca35",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/WindowLemmasTransitions.lean",
+      "sha256": "28b83b6284e77785518576b49fe22d062d674fdd444a08a61ba00ebb75f58747",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/WindowLemmasWalk.lean",
+      "sha256": "e5e707008a697d828fd0798be9f3d4f65aa866991836094b67575084e0cf3904",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43/WindowSwap.lean",
+      "sha256": "74faac0efb7d2d26bfc158ebe0d405baf8b14facecc87cef9356c2cf580dde75",
+      "from": "Conj43"
+    },
+    {
+      "path": "Conj43.lean",
+      "sha256": "3bc8458f4753f176f7bcddfea59c73640cb5ac2628553a56e748eed0e3015ea8",
+      "from": "Conj43"
+    },
+    {
+      "path": "LGV/Finite.lean",
+      "sha256": "4f0f7099cbd461baadd1352573ef780ae22023f1b7ef2aed1ab3b109c8f7ff87",
+      "from": "LeanTP"
+    },
+    {
+      "path": "LGV/LICENSE",
+      "sha256": "5c9817c129b98e7bb966bca028c43c19107102ef8e03fe799bffb4354f4ef015",
+      "from": "LeanTP"
+    },
+    {
+      "path": "LGV/Ordered.lean",
+      "sha256": "8a41ccd430e7942b9c52dce5e294c78b825a03c210a1b50a553bbc7a3d819100",
+      "from": "LeanTP"
+    },
+    {
+      "path": "LGV/PORT_NOTE.md",
+      "sha256": "c13c5ee8309bddfc59fb1756ed100f73b6644a73575114a5620498a2c0bb412d",
+      "from": "LeanTP"
+    },
+    {
+      "path": "LGV/Quiver/Network.lean",
+      "sha256": "10d2ca7ad15d9d644ac15ad5868bd0f386de5481b9a8af4ae2bc5ab03799cbe4",
+      "from": "LeanTP"
+    },
+    {
+      "path": "LGV/Quiver/Path.lean",
+      "sha256": "78f64ed0951cc6cd06fe179b23478e56bbf2a147b7f479b7ad8af93d770132e0",
+      "from": "LeanTP"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "from": "Conj43"
+    },
+    {
+      "path": "TP/CrossingAdapterDefs.lean",
+      "sha256": "7372b6d2b1f57c2b5d8e5a5c7f499cf6bb1a4f236b935e1fca3e8ccf8fd5f20a",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/DecPerm.lean",
+      "sha256": "5f2b78edfbc0e005068afa603a34a19aab837d1af6e14ae4f68ed3d0e21cd77d",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/DecPermAffine.lean",
+      "sha256": "bc042ab636c9817514ccb7ada1734808ded01559bf62343251112d092b6b482b",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/Defs.lean",
+      "sha256": "39aeb3e072b017e1aebf9983cd77c93658c92260761cdc45c32fb355e22ce49b",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/LoopDeleteBasic.lean",
+      "sha256": "50f11155679628033d44c4dfc501054ac056b2be60159c0f310468668e16b4d9",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/LoopDeleteBdd.lean",
+      "sha256": "9a65f8f514289c1de14e24821a575387ec942b2e92eedf27a0aec4cd360fbbd8",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/LoopDeleteDefs.lean",
+      "sha256": "678feb0bb99604944ab8736afb845d30a5fa37896b4697655c550f574bf0320a",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/LoopDeleteLength.lean",
+      "sha256": "07f38d570037a58e8444eb46d26132686add970a44c2bdf92aac943f63813a53",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/LoopDeleteRank.lean",
+      "sha256": "7a80f1f9fe6efc8e48d8d8d69a1d66304604feb37f6a956f9a149439aac11b11",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/NecklaceBasic.lean",
+      "sha256": "0846fc69fe94abea24778bfd27f94b27d85b0cef4a97ff58ce3e3043f442162b",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TP/NecklaceDefs.lean",
+      "sha256": "afc6acb618cfbef1948422e2f1b4942ea11bc08691ea5224d1ebd4756fe23e39",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TPAdapter/Crossing.lean",
+      "sha256": "8ac61474ae08c7bb30ab6ea4e3fba931ce2f3b566f3a902ddbf6cdadc0c6c675",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TPAdapter/CrossingHelpers.lean",
+      "sha256": "a8e617e8ba31c12186432bf00d8915716178838dd317d907cf1ff87c11c84f84",
+      "from": "LeanTP"
+    },
+    {
+      "path": "TPLoops.lean",
+      "sha256": "5260b78eb34ceb7d5a88462e6989778ab8494c6f180436b15b7c81ddb4cdd229",
+      "from": "LeanTP"
+    },
+    {
+      "path": "axioms.lean",
+      "sha256": "ed48a930ef2aa0f4292895065f2568354970512e68ed947afce8f29c43519dcd",
+      "from": "Conj43"
+    },
+    {
+      "path": "comparator.json",
+      "sha256": "e274fc9fb72d1cedab4a59cf6f053ec92456fae5d204732ad7157f3ed576dfd0",
+      "from": "Conj43"
+    },
+    {
+      "path": "comparator_adapter.json",
+      "sha256": "64d7309ab62b473afa8a292a2a27140225937594ac3d467e3bf7bd03d5d9578d",
+      "from": "derived"
+    },
+    {
+      "path": "comparator_interface.json",
+      "sha256": "02d06f4ea060aab5a24e328eecada066d4a20eac11bcb2e271a698a3a3a0202e",
+      "from": "Conj43"
+    },
+    {
+      "path": "comparator_loops.json",
+      "sha256": "6ecbfbafc70e777ee10a699b1a0aba4f55b5d12a4514faeacf27b829c7c1cb36",
+      "from": "LeanTP"
+    },
+    {
+      "path": "comparator_reduction.json",
+      "sha256": "968e2cda34f3b249779084b873b1fdce9e4a34ecc9f9ce4b4f9bc8c3def91b51",
+      "from": "Conj43"
+    },
+    {
+      "path": "driver.lean",
+      "sha256": "9539216de2421ca70fd2f43d83b2f3f89de6ac95d20f41817299e8066b70ff69",
+      "from": "Conj43"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "3af61884022493a181c7e31ffdb7a36d584201f3839134c8ff90900a48b06c4b",
+      "from": "Conj43"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "1ebca6abcad23de532e22a7d9c0cc0ce3928ae1f05e0de87ebda8eedb8eee801",
+      "from": "Conj43"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "62c2d9c0fc1ec4c67e151c11eff41ca004ef38e179cf9476c230406e6defedef",
+      "from": "Conj43"
+    },
+    {
+      "path": "out/crossval_coloop.json",
+      "sha256": "22a91741505c06c4c1d7220daacd0fb266938f8fbb11492a96459e643edb6913",
+      "from": "Conj43"
+    }
+  ]
+}

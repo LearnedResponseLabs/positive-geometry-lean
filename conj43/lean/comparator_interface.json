@@ -1,0 +1,268 @@
+{
+  "challenge_module": "Challenge.Interface",
+  "solution_module": "Conj43.Interface",
+  "theorem_names": [
+    "Conj43.galashin_isLooplessBAP",
+    "Conj43.galashin_residues",
+    "Conj43.galashin_injective",
+    "Conj43.galashin_surjective",
+    "Conj43.galashin_coloop",
+    "Conj43.galashin_no_loops",
+    "Conj43.galashin_rank_range",
+    "Conj43.galashin_necklace"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": false,
+  "crossing": {
+    "challenge_module": "Challenge.InterfaceCrossing",
+    "solution_module": "Conj43.InterfaceCrossingProofs",
+    "theorem_names": [
+      "Conj43.crossEdge_iff_affine",
+      "Conj43.alignment_iff_affine"
+    ],
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "solution_module_v2": "Conj43.InterfaceProofs",
+  "chords": {
+    "challenge_module": "Challenge.InterfaceChords",
+    "solution_module": "Conj43.InterfaceChordsProofs",
+    "theorem_names": [
+      "Conj43.crossEdge_irrefl",
+      "Conj43.chord_endpoints_distinct",
+      "Conj43.crossEdge_iff_interleave"
+    ],
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "refined": {
+    "challenge_module": "Challenge.InterfaceRefined",
+    "solution_module": "Conj43.InterfaceRefinedProofs",
+    "theorem_names": [
+      "Conj43.encode_clockwise4",
+      "Conj43.halfopen_a",
+      "Conj43.halfopen_b",
+      "Conj43.halfopen_L1",
+      "Conj43.halfopen_L2",
+      "Conj43.halfopen_L3",
+      "Conj43.necklace_iff_refinedArc"
+    ],
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "exponent": {
+    "challenge_module": "Challenge.InterfaceExponent",
+    "solution_module": "Conj43.InterfaceExponentProofs",
+    "theorem_names": [
+      "Conj43.misUD_iff_galashin",
+      "Conj43.misDU_iff_galashin",
+      "Conj43.pairExponent_eq_galashin"
+    ],
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "count": {
+    "challenge_module": "Challenge.PartitionCount",
+    "solution_module": "Conj43.PartitionCountProofs",
+    "theorem_names": [
+      "Conj43.winding_eq_wrapped",
+      "Conj43.partition_card"
+    ],
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "count_advance": {
+    "challenge_module": "Challenge.ExtensionsCount",
+    "solution_module": "Conj43.ExtensionsCount",
+    "theorem_names": [
+      "Conj43.partition_advance",
+      "Conj43.crossEdges_advance"
+    ],
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "sharp_cot": {
+    "challenge_module": "Challenge.ExtensionsSharp",
+    "solution_module": "Conj43.ExtensionsSharp",
+    "theorem_names": [
+      "Conj43.kappaStar_pos",
+      "Conj43.kappaStar_lt_tan",
+      "Conj43.sharp_cot_cycle",
+      "Conj43.sharp_cot_extremizer"
+    ],
+    "definition_names": [
+      "Conj43.kappaStar",
+      "Conj43.sharpAngles",
+      "Conj43.sharpVelocity"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "sandwich": {
+    "challenge_module": "Challenge.ExtensionsSandwich",
+    "solution_module": "Conj43.ExtensionsSandwich",
+    "theorem_names": [
+      "Conj43.sharp_laplacian_sandwich"
+    ],
+    "definition_names": [
+      "Conj43.graphLaplacian",
+      "Conj43.kappaStarZ",
+      "Conj43.kappaStar"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "shift": {
+    "challenge_module": "Challenge.ExtensionsShift",
+    "solution_module": "Conj43.ExtensionsShift",
+    "theorem_names": [
+      "Conj43.rank_sum",
+      "Conj43.shift_bounds",
+      "Conj43.shift_periodic",
+      "Conj43.shift_bijective",
+      "Conj43.shift_rank",
+      "Conj43.shift_self_le_iff",
+      "Conj43.elec_shift_eq_ising"
+    ],
+    "definition_names": [
+      "Conj43.shiftF",
+      "Conj43.elecBAP",
+      "Conj43.isingBAP"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "extensions_lipschitz": {
+    "challenge_module": "Challenge.ExtensionsLipschitz",
+    "solution_module": "Conj43.ExtensionsLipschitz",
+    "theorem_names": [
+      "Conj43.sharp_strong_monotone",
+      "Conj43.sharp_inverse_lipschitz"
+    ],
+    "definition_names": [
+      "Conj43.necklaceGradient",
+      "Conj43.euclidNorm",
+      "Conj43.ComponentShift",
+      "Conj43.quotNorm",
+      "Conj43.graphLaplacian",
+      "Conj43.kappaStarZ",
+      "Conj43.kappaStar"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+ "gradient_preimage": {
+  "challenge_module": "Challenge.GradientPreimage",
+  "solution_module": "Conj43.VariationalPreimage",
+  "theorem_names": [
+   "Conj43.variational_gradient_preimage"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ],
+  "enable_nanoda": false
+ },
+  "window_lemmas": {
+  "challenge_module": "Challenge.WindowLemmas",
+  "solution_module": "Conj43.WindowLemmasProofs",
+  "theorem_names": [
+    "Conj43.WindowLemmas.walk_advance_multiple",
+    "Conj43.WindowLemmas.walk_simple_of_advance",
+    "Conj43.WindowLemmas.active_set_restriction",
+    "Conj43.WindowLemmas.adjacent_active_ascent",
+    "Conj43.WindowLemmas.adjacent_ascent_bounds",
+    "Conj43.WindowLemmas.swap_measure_drop",
+    "Conj43.WindowLemmas.local_transition_identity",
+    "Conj43.WindowLemmas.local_transition",
+    "Conj43.WindowLemmas.winding_arithmetic",
+    "Conj43.WindowLemmas.control_two_laps",
+    "Conj43.WindowLemmas.control_nonadjacent_swap"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": false
+},
+ "necklace_embedding": {
+  "challenge_module": "Challenge.NecklaceEmbedding",
+  "solution_module": "Conj43.NecklaceEmbedding",
+  "theorem_names": [
+    "Conj43.untwisted_recovery_ratio",
+    "Conj43.untwisted_recovery_rescale",
+    "Conj43.untwisted_measurement_homeomorphism",
+    "Conj43.necklace_conditional_embedding",
+    "Conj43.necklace_hypotheses_nonvacuous",
+    "Conj43.necklace_log_needed"
+  ],
+  "definition_names": [
+    "Conj43.posRescale",
+    "Conj43.posClass",
+    "Conj43.fixtureCycle",
+    "Conj43.PosVec",
+    "Conj43.PosProj"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": false
+}
+}

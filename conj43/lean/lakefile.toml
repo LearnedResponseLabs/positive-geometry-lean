@@ -1,0 +1,33 @@
+name = "Conj43"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["Conj43"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.0-rc1"
+
+[[lean_lib]]
+name = "Conj43"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "LGV"
+
+[[lean_lib]]
+name = "TP"
+
+[[lean_lib]]
+name = "TPAdapter"
+
+[[lean_lib]]
+name = "TPLoops"

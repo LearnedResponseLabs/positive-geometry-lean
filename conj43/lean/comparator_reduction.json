@@ -1,0 +1,41 @@
+{
+  "reduction": {
+    "challenge_module": "Challenge.Reduction",
+    "solution_module": "Conj43.Reduction",
+    "theorem_names": [
+      "Conj43.mem_component_iff",
+      "Conj43.restrictEntry_bijective",
+      "Conj43.restrictBAP_inv",
+      "Conj43.restrict_crossEdge",
+      "Conj43.restrict_connected",
+      "Conj43.component_card_eq_one_iff",
+      "Conj43.restrict_fixedPointFree",
+      "Conj43.admissible_iff_components",
+      "Conj43.slice_homeomorph_components",
+      "Conj43.singleton_slice",
+      "Conj43.component_not_sigma_stable",
+      "Conj43.entryMapOn_not_bijective",
+      "Conj43.restrict_coloop_fixed",
+      "Conj43.fixture_two_components"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  },
+  "reduction_square": {
+    "challenge_module": "Challenge.ReductionSquare",
+    "solution_module": "Conj43.ReductionSquareProof",
+    "theorem_names": [
+      "Conj43.reduction_homeomorphism_iff"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "enable_nanoda": false
+  }
+}

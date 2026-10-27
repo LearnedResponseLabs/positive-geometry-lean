@@ -1,0 +1,17 @@
+{
+  "loops": {
+    "challenge_module": "Challenge.Loops",
+    "solution_module": "TPLoops",
+    "theorem_names": [
+      "TP.deleteLoop_bdd",
+      "TP.affRank_deleteLoop",
+      "TP.affLength_deleteLoop"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "enable_nanoda": false
+  }
+}

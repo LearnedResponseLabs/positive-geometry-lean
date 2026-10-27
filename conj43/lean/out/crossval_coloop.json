@@ -1,0 +1,19 @@
+{
+  "tag": "conj43_lean_L4_crossval_coloop",
+  "census_source": "an exact-rational census script (not included in this archive)",
+  "compared_keys": [
+    "window",
+    "coloops",
+    "rank",
+    "edges",
+    "necklace",
+    "B",
+    "M",
+    "PDM"
+  ],
+  "max_n": 7,
+  "cells": 5912,
+  "cells_with_at_least_one_coloop": 3737,
+  "all_bit_identical_and_rowdiff": true,
+  "failures": []
+}

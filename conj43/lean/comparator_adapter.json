@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge.CrossingAdapter",
+  "solution_module": "TPAdapter.Crossing",
+  "theorem_names": [
+    "TP.decCrossEdge_iff",
+    "TP.decCrossEdges_eq",
+    "TP.dec_winding_one_partition"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": false
+}
